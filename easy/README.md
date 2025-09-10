@@ -57,6 +57,53 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐⭐☆☆  
 **Tempo estimado:** 60-90 minutos
 
+---
+
+### 4. 🧹 [The Cleanup Mission - Restoring Order in the Cloud](./The%20Cleanup%20Mission%20-%20Restoring%20ORder%20in%20the%20Cloud/)
+
+**Foco:** VPC Cleanup, Security Groups, Dependências de Recursos, Governança
+
+**Conceitos principais:**
+- Identificação e resolução de dependências entre recursos AWS
+- Ordem correta de deleção de recursos de infraestrutura
+- Limpeza de VPCs, Security Groups e recursos órfãos
+- Boas práticas de governança e limpeza de recursos
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 75-90 minutos
+
+---
+
+### 5. 🚀 [Foundational - Serverless Deployment Pipeline with AWS DevOps Tools](./Foundational%20-%20Serverless%20Deployment%20Pipeline%20with%20AWS%20DevOps%20Tools/)
+
+**Foco:** CI/CD Pipeline, CodeCommit, CodePipeline, API Gateway, Lambda Integration
+
+**Conceitos principais:**
+- Implementação de pipeline completo de CI/CD com AWS DevOps Tools
+- Configuração de versionamento com AWS CodeCommit
+- Automação de deploy com AWS CodePipeline e CodeBuild
+- Integração API Gateway com Lambda via Proxy Integration
+- Troubleshooting de validação rígida em labs hands-on
+
+**Dificuldade:** ⭐⭐⭐⭐☆  
+**Tempo estimado:** 90-120 minutos
+
+---
+
+### 6. 📊 [Unified Data Querying with Amazon Athena](./Unified%20Data%20Querying%20with%20%20Amazon%20Athena/)
+
+**Foco:** Análise de Dados, Federated Queries, SQL, S3, DynamoDB, MySQL
+
+**Conceitos principais:**
+- Consultas SQL sem servidor com Amazon Athena
+- Análise de datasets CSV armazenados no S3
+- Federated Queries com DynamoDB e MySQL
+- JOINs federados entre diferentes fontes de dados
+- Troubleshooting de conectores federados e problemas de infraestrutura
+
+**Dificuldade:** ⭐⭐⭐⭐☆  
+**Tempo estimado:** 90-120 minutos (Task 4 pode ser bloqueada por problemas de lab)
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -67,7 +114,10 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 ### Ordem Recomendada
 1. **Sharing is caring** - Conceitos de Lambda Layers (mais simples)
 2. **Find the secret message** - Rede e segurança (intermediário)
-3. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+3. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
+4. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
+5. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
+6. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
