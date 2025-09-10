@@ -16,6 +16,23 @@ Este repositório contém soluções e documentação para desafios do AWS JAM (
 ```
 aws-jam-challenges/
 ├── README.md                           # Este arquivo
+├── easy/                              # Projetos de dificuldade fácil
+│   ├── README.md                      # Resumo dos projetos easy
+│   ├── Find the secret message hidden in SQS queue/
+│   │   ├── README.md                  # Documentação completa do projeto
+│   │   ├── task1.md                   # Task 1: Configurar VPC Endpoints
+│   │   └── task2.md                   # Task 2: Pós-mortem e lições
+│   ├── Sharing is caring - reusable code across Lambdas/
+│   │   ├── README.md                  # Documentação completa do projeto
+│   │   ├── task1.md                   # Task 1: Criar Lambda Layer
+│   │   └── task2.md                   # Task 2: Versionamento e deploy canary
+│   └── Protect my CloudFront Origin/
+│       ├── README.md                  # Documentação completa do projeto
+│       ├── task1.md                   # Task 1: Identificar vulnerabilidade
+│       ├── task2.md                   # Task 2: Proteção L4
+│       ├── task3.md                   # Task 3: Header secreto (CloudFront)
+│       ├── task4.md                   # Task 4: Validação L7 (ALB)
+│       └── task5.md                   # Task 5: Validação final
 ├── medium/                            # Projetos de dificuldade média
 │   ├── README.md                      # Resumo dos projetos medium
 │   ├── Automate EKS Access Controls using Bedrock Agent/
@@ -34,6 +51,29 @@ aws-jam-challenges/
 ```
 
 ## 🚀 Projetos Disponíveis
+
+### Easy (Dificuldade Fácil)
+
+#### 1. 🔍 Find the secret message hidden in SQS queue!
+- **Objetivo:** Resolver problemas de conectividade Lambda-SQS em VPC
+- **Tecnologias:** Lambda, SQS, VPC Endpoints, Security Groups, IAM
+- **Tasks:** 2 tasks completas
+- **Conceitos:** Diagnóstico de timeouts, least privilege, validação automática
+- **Status:** ✅ Completo
+
+#### 2. 🤝 Sharing is caring - reusable code across Lambdas
+- **Objetivo:** Implementar Lambda Layers para compartilhamento de código
+- **Tecnologias:** Lambda, Lambda Layers, S3, Versionamento
+- **Tasks:** 2 tasks completas
+- **Conceitos:** Reutilização de código, deploy canary, compatibilidade
+- **Status:** ✅ Completo
+
+#### 3. 🛡️ Protect my CloudFront Origin
+- **Objetivo:** Implementar proteção em múltiplas camadas para ALB
+- **Tecnologias:** CloudFront, ALB, Security Groups, Prefix Lists
+- **Tasks:** 5 tasks completas
+- **Conceitos:** Segurança em camadas, headers secretos, validação L4/L7
+- **Status:** ✅ Completo
 
 ### Medium (Dificuldade Média)
 
@@ -58,6 +98,12 @@ aws-jam-challenges/
 - **Amazon DynamoDB** - Banco NoSQL
 - **AWS X-Ray** - Observabilidade distribuída
 - **AWS IAM** - Gerenciamento de identidade e acesso
+- **Amazon SQS** - Fila de mensagens
+- **Amazon CloudFront** - CDN global
+- **Application Load Balancer** - Balanceamento de carga
+- **VPC Endpoints** - Conectividade privada
+- **Security Groups** - Controle de tráfego de rede
+- **Lambda Layers** - Compartilhamento de código
 
 ### Frameworks e Ferramentas
 - **AWS Lambda Powertools** - Observabilidade e produtividade
