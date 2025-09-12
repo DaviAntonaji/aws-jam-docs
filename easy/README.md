@@ -90,7 +90,50 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 6. 📊 [Unified Data Querying with Amazon Athena](./Unified%20Data%20Querying%20with%20%20Amazon%20Athena/)
+### 6. 🌟 [Data with the Stars!](./Data%20with%20Stars!/)
+
+**Foco:** S3 Security & Compliance (HIPAA)
+
+**Conceitos principais:**
+- Controle de acesso com Bucket Policies (USER-A vs USER-B)
+- Auditoria com S3 Server Access Logging
+- Adaptação a ambientes com permissões restritas
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+---
+
+### 7. 🧪 [Prepare to Fail (over)](./Prepare%20to%20Fail%20(over)/)
+
+**Foco:** Alta disponibilidade, ALB, EC2
+
+**Conceitos principais:**
+- Configuração de ALB e Target Groups
+- Health checks e Security Groups
+- Algoritmo Round robin e stickiness
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+---
+
+### 8. ⏳ [Waiting in the queue!](./Waiting%20in%20the%20queue!/)
+
+**Foco:** SNS → SQS → Lambda, permissões e triggers
+
+**Conceitos principais:**
+- Policy correta na SQS (ARN vs URL)
+- Assinatura do SNS para SQS
+- Least privilege para Lambda consumir SQS
+- Event source mapping (trigger) SQS → Lambda
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+---
+
+### 9. 📊 [Unified Data Querying with Amazon Athena](./Unified%20Data%20Querying%20with%20%20Amazon%20Athena/)
 
 **Foco:** Análise de Dados, Federated Queries, SQL, S3, DynamoDB, MySQL
 
