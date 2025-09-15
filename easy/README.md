@@ -147,6 +147,55 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐⭐⭐☆  
 **Tempo estimado:** 90-120 minutos (Task 4 pode ser bloqueada por problemas de lab)
 
+---
+
+### 10. 🔍 [Look before you leap on the Cloud](./Look%20before%20you%20leap%20on%20t%20he%20Cloud/)
+
+**Foco:** Configurações de Segurança, Troubleshooting, VPC Networking, IAM, KMS, Cross-Account Access
+
+**Conceitos principais:**
+- Configuração de Lambda em VPC com acesso à internet via NAT Gateway
+- Gestão de permissões IAM para acesso S3 com least privilege
+- Controle administrativo de chaves KMS através de Key Policies
+- Implementação segura de cross-account access em buckets S3
+- Troubleshooting sistemático de problemas de conectividade e permissões
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 60-80 minutos
+
+---
+
+### 11. 🤖 [Want to play with Foundation Models](./Want%20to%20play%20with%20Foundation%20Models/)
+
+**Foco:** Amazon Bedrock, Foundation Models, Amazon Nova, IA Generativa, Parâmetros de Inferência
+
+**Conceitos principais:**
+- Configuração de acesso aos modelos Amazon Nova no Bedrock
+- Comparação de diferentes Foundation Models (Nova Lite vs Nova Micro)
+- Ajuste de parâmetros de inferência (Temperature, Top P, Length)
+- Geração de imagens com Amazon Nova Canvas
+- Invocação programática via Bedrock Runtime API com Python
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 2-3 horas
+
+---
+
+### 12. 🛒 [Automating E-commerce Product Categorization with Amazon Rekognition and AWS Lambda](./Automating%20E-commerce%20Product%20Categorization%20with%20Amazon%20Rekognition%20and%20AWS%20Lambda/)
+
+**Foco:** Amazon Rekognition, AWS Lambda, S3 Triggers, DynamoDB, CloudWatch, E-commerce
+
+**Conceitos principais:**
+- Configuração de triggers S3 para AWS Lambda
+- Debugging e otimização de funções Lambda (timeout, memória)
+- Integração Amazon Rekognition para classificação de imagens
+- Monitoramento via CloudWatch Logs
+- Armazenamento de resultados em DynamoDB
+- Pipeline completo de categorização automática para e-commerce
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 1-2 horas
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -156,11 +205,14 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ### Ordem Recomendada
 1. **Sharing is caring** - Conceitos de Lambda Layers (mais simples)
-2. **Find the secret message** - Rede e segurança (intermediário)
-3. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
-4. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
-5. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
-6. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+2. **Want to play with Foundation Models** - IA Generativa e Bedrock (iniciante)
+3. **Automating E-commerce Product Categorization** - Rekognition e Lambda (iniciante)
+4. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
+5. **Find the secret message** - Rede e segurança (intermediário)
+6. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
+7. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
+8. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
+9. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
