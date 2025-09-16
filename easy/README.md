@@ -196,6 +196,57 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐☆☆☆  
 **Tempo estimado:** 1-2 horas
 
+---
+
+### 13. 🚀 [Developing Deployments](./Developing%20Deployments/)
+
+**Foco:** AWS CodeDeploy, Deployment Automation, EC2, Lifecycle Hooks, DevOps
+
+**Conceitos principais:**
+- Criação de arquivos `appspec.yml` válidos para CodeDeploy
+- Configuração de aplicações e deployment groups
+- Entendimento de lifecycle hooks (ApplicationStop, BeforeInstall, ApplicationStart)
+- Execução de deployments automatizados em instâncias EC2
+- Monitoramento e validação de deployments
+- Rollback automático e troubleshooting
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 1-2 horas
+
+---
+
+### 14. 🔧 [CodePipeline Not Working](./CodePipeline%20Not%20Working/)
+
+**Foco:** AWS CodePipeline, Troubleshooting, CI/CD, CloudFormation, IAM
+
+**Conceitos principais:**
+- Diagnóstico de falhas em pipelines CodePipeline
+- Correção de configurações de Source e Deploy stages
+- Resolução de problemas de permissões IAM
+- Ajuste de caminhos de arquivos em CloudFormation
+- Configuração de change detection options
+- Troubleshooting sistemático de CI/CD
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+---
+
+### 15. 🚀 [Foundational Serverless - Connecting S3 events](./Foundational%20Serverless%20-%20Connecting%20S3%20events/)
+
+**Foco:** Amazon S3, AWS Lambda, Amazon Rekognition, Event-Driven Architecture, Serverless
+
+**Conceitos principais:**
+- Criação e configuração de buckets S3 para eventos
+- Configuração de notificações de eventos S3
+- Integração S3 com AWS Lambda automaticamente
+- Processamento de imagens com Amazon Rekognition
+- Monitoramento via CloudWatch Logs
+- Arquitetura serverless event-driven
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -207,12 +258,15 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 1. **Sharing is caring** - Conceitos de Lambda Layers (mais simples)
 2. **Want to play with Foundation Models** - IA Generativa e Bedrock (iniciante)
 3. **Automating E-commerce Product Categorization** - Rekognition e Lambda (iniciante)
-4. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
-5. **Find the secret message** - Rede e segurança (intermediário)
-6. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
-7. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
-8. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
-9. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+4. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven (iniciante)
+5. **CodePipeline Not Working** - Troubleshooting de CI/CD (iniciante)
+6. **Developing Deployments** - CodeDeploy e deployment automation (iniciante)
+7. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
+8. **Find the secret message** - Rede e segurança (intermediário)
+9. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
+10. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
+11. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
+12. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
