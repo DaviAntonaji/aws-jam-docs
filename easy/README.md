@@ -14,7 +14,24 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ## 📚 Desafios Disponíveis
 
-### 1. 🔍 [Find the secret message hidden in SQS queue!](./Find%20the%20secret%20message%20hidden%20in%20SQS%20queue/)
+### 1. 🤖 [AI-Powered Log Analysis Challenge using Amazon Bedrock](./AI-Powered%20Log%20Analysis%20Challenge%20using%20Amazon%20Bedrock/)
+
+**Foco:** Amazon Bedrock, Amazon Nova Lite, AWS Lambda, CloudWatch Logs, IAM, Troubleshooting
+
+**Conceitos principais:**
+- Configuração de acesso a modelos Amazon Nova no Bedrock
+- Troubleshooting de integração Lambda + Bedrock
+- Análise automatizada de logs com IA generativa
+- Configuração de permissões IAM para Bedrock
+- Rate limiting e throttling em ambiente de treinamento
+- Resolução de AccessDeniedException em modelos de IA
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 15-30 minutos
+
+---
+
+### 2. 🔍 [Find the secret message hidden in SQS queue!](./Find%20the%20secret%20message%20hidden%20in%20SQS%20queue/)
 
 **Foco:** AWS Lambda, VPC Endpoints, Security Groups, IAM
 
@@ -29,7 +46,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 2. 🤝 [Sharing is caring - reusable code across Lambdas](./Sharing%20is%20caring%20-%20reusable%20code%20across%20Lambdas/)
+### 3. 🤝 [Sharing is caring - reusable code across Lambdas](./Sharing%20is%20caring%20-%20reusable%20code%20across%20Lambdas/)
 
 **Foco:** AWS Lambda Layers, Versionamento, Deploy Canary
 
@@ -44,7 +61,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 3. 🛡️ [Protect my CloudFront Origin](./Protect%20my%20CloudFront%20Origin/)
+### 4. 🛡️ [Protect my CloudFront Origin](./Protect%20my%20CloudFront%20Origin/)
 
 **Foco:** CloudFront, ALB, Security Groups, Proteção em Camadas
 
@@ -59,7 +76,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 4. 🧹 [The Cleanup Mission - Restoring Order in the Cloud](./The%20Cleanup%20Mission%20-%20Restoring%20ORder%20in%20the%20Cloud/)
+### 5. 🧹 [The Cleanup Mission - Restoring Order in the Cloud](./The%20Cleanup%20Mission%20-%20Restoring%20ORder%20in%20the%20Cloud/)
 
 **Foco:** VPC Cleanup, Security Groups, Dependências de Recursos, Governança
 
@@ -74,7 +91,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 5. 🚀 [Foundational - Serverless Deployment Pipeline with AWS DevOps Tools](./Foundational%20-%20Serverless%20Deployment%20Pipeline%20with%20AWS%20DevOps%20Tools/)
+### 6. 🚀 [Foundational - Serverless Deployment Pipeline with AWS DevOps Tools](./Foundational%20-%20Serverless%20Deployment%20Pipeline%20with%20AWS%20DevOps%20Tools/)
 
 **Foco:** CI/CD Pipeline, CodeCommit, CodePipeline, API Gateway, Lambda Integration
 
@@ -90,7 +107,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 6. 🌟 [Data with the Stars!](./Data%20with%20Stars!/)
+### 7. 🌟 [Data with the Stars!](./Data%20with%20Stars!/)
 
 **Foco:** S3 Security & Compliance (HIPAA)
 
@@ -104,7 +121,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 7. 🧪 [Prepare to Fail (over)](./Prepare%20to%20Fail%20(over)/)
+### 8. 🧪 [Prepare to Fail (over)](./Prepare%20to%20Fail%20(over)/)
 
 **Foco:** Alta disponibilidade, ALB, EC2
 
@@ -118,7 +135,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 8. ⏳ [Waiting in the queue!](./Waiting%20in%20the%20queue!/)
+### 9. ⏳ [Waiting in the queue!](./Waiting%20in%20the%20queue!/)
 
 **Foco:** SNS → SQS → Lambda, permissões e triggers
 
@@ -133,7 +150,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 9. 📊 [Unified Data Querying with Amazon Athena](./Unified%20Data%20Querying%20with%20%20Amazon%20Athena/)
+### 10. 📊 [Unified Data Querying with Amazon Athena](./Unified%20Data%20Querying%20with%20%20Amazon%20Athena/)
 
 **Foco:** Análise de Dados, Federated Queries, SQL, S3, DynamoDB, MySQL
 
@@ -149,7 +166,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 10. 🔍 [Look before you leap on the Cloud](./Look%20before%20you%20leap%20on%20t%20he%20Cloud/)
+### 11. 🔍 [Look before you leap on the Cloud](./Look%20before%20you%20leap%20on%20t%20he%20Cloud/)
 
 **Foco:** Configurações de Segurança, Troubleshooting, VPC Networking, IAM, KMS, Cross-Account Access
 
@@ -165,7 +182,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 11. 🤖 [Want to play with Foundation Models](./Want%20to%20play%20with%20Foundation%20Models/)
+### 12. 🤖 [Want to play with Foundation Models](./Want%20to%20play%20with%20Foundation%20Models/)
 
 **Foco:** Amazon Bedrock, Foundation Models, Amazon Nova, IA Generativa, Parâmetros de Inferência
 
@@ -181,7 +198,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 12. 🛒 [Automating E-commerce Product Categorization with Amazon Rekognition and AWS Lambda](./Automating%20E-commerce%20Product%20Categorization%20with%20Amazon%20Rekognition%20and%20AWS%20Lambda/)
+### 13. 🛒 [Automating E-commerce Product Categorization with Amazon Rekognition and AWS Lambda](./Automating%20E-commerce%20Product%20Categorization%20with%20Amazon%20Rekognition%20and%20AWS%20Lambda/)
 
 **Foco:** Amazon Rekognition, AWS Lambda, S3 Triggers, DynamoDB, CloudWatch, E-commerce
 
@@ -198,7 +215,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 13. 🚀 [Developing Deployments](./Developing%20Deployments/)
+### 14. 🚀 [Developing Deployments](./Developing%20Deployments/)
 
 **Foco:** AWS CodeDeploy, Deployment Automation, EC2, Lifecycle Hooks, DevOps
 
@@ -215,7 +232,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 14. 🔧 [CodePipeline Not Working](./CodePipeline%20Not%20Working/)
+### 15. 🔧 [CodePipeline Not Working](./CodePipeline%20Not%20Working/)
 
 **Foco:** AWS CodePipeline, Troubleshooting, CI/CD, CloudFormation, IAM
 
@@ -232,7 +249,41 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 15. 🚀 [Foundational Serverless - Connecting S3 events](./Foundational%20Serverless%20-%20Connecting%20S3%20events/)
+### 16. 🔐 [Keep your variables safe](./Keep%20your%20variables%20safe/)
+
+**Foco:** AWS Lambda, AWS KMS, Criptografia, Segurança de Dados, Customer Managed Keys
+
+**Conceitos principais:**
+- Configuração de variáveis de ambiente em AWS Lambda
+- Criptografia com Customer Managed Keys (CMK) no KMS
+- Segurança em repouso para dados sensíveis
+- Criptografia em trânsito com helpers do console
+- Configuração de permissões IAM para KMS
+- Troubleshooting de problemas de criptografia
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 15-30 minutos
+
+---
+
+### 17. 🌐 [Hey WordPress Let's Multisite](./Hey%20Wordpress%20Let's%20Multisite/)
+
+**Foco:** Amazon Lightsail, WordPress Multisite, Bitnami Stack, Linux Permissions, Apache Configuration
+
+**Conceitos principais:**
+- Configuração de WordPress Multisite em Lightsail
+- Criação de rede WordPress com subdomínios
+- Configuração de rewrite rules no Apache
+- Troubleshooting de permissões de arquivos Linux
+- Uso de nip.io para resolução dinâmica de DNS
+- Administração de múltiplos sites em uma instalação
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 45-60 minutos
+
+---
+
+### 18. 🚀 [Foundational Serverless - Connecting S3 events](./Foundational%20Serverless%20-%20Connecting%20S3%20events/)
 
 **Foco:** Amazon S3, AWS Lambda, Amazon Rekognition, Event-Driven Architecture, Serverless
 
@@ -255,18 +306,21 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 - **Ambiente de lab** configurado (quando aplicável)
 
 ### Ordem Recomendada
-1. **Sharing is caring** - Conceitos de Lambda Layers (mais simples)
-2. **Want to play with Foundation Models** - IA Generativa e Bedrock (iniciante)
-3. **Automating E-commerce Product Categorization** - Rekognition e Lambda (iniciante)
-4. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven (iniciante)
-5. **CodePipeline Not Working** - Troubleshooting de CI/CD (iniciante)
-6. **Developing Deployments** - CodeDeploy e deployment automation (iniciante)
-7. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
-8. **Find the secret message** - Rede e segurança (intermediário)
-9. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
-10. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
-11. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
-12. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+1. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock (mais simples)
+2. **Keep your variables safe** - Criptografia e segurança básica (iniciante)
+3. **Sharing is caring** - Conceitos de Lambda Layers (iniciante)
+4. **Want to play with Foundation Models** - IA Generativa e Bedrock (iniciante)
+5. **Automating E-commerce Product Categorization** - Rekognition e Lambda (iniciante)
+6. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven (iniciante)
+7. **CodePipeline Not Working** - Troubleshooting de CI/CD (iniciante)
+8. **Developing Deployments** - CodeDeploy e deployment automation (iniciante)
+9. **Hey WordPress Let's Multisite** - WordPress e administração Linux (intermediário)
+10. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
+11. **Find the secret message** - Rede e segurança (intermediário)
+12. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
+13. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
+14. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
+15. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
