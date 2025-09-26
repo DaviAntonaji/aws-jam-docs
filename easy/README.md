@@ -298,6 +298,57 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐☆☆☆  
 **Tempo estimado:** 30-45 minutos
 
+---
+
+### 19. 🛡️ [Deny external attacks from IPv6](./Deny%20external%20attacks%20from%20IPv6/)
+
+**Foco:** IPv6 Security, Egress-Only Internet Gateway, VPC Networking, Route Tables, Cost Optimization
+
+**Conceitos principais:**
+- Configuração de Egress-Only Internet Gateway para IPv6
+- Modificação de Route Tables para controle de tráfego IPv6
+- Teste de conectividade IPv6 (entrada e saída)
+- Comparação entre Internet Gateway e Egress-Only Internet Gateway
+- Troubleshooting de configurações de rede IPv6
+- Implementação de segurança IPv6 sem custos adicionais
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 20-30 minutos
+
+---
+
+### 20. 🔐 [No unencrypted databases allowed](./No%20unencrypted%20databases%20allowed/)
+
+**Foco:** RDS Encryption, Database Migration, KMS Integration, Data Security, Snapshot Management
+
+**Conceitos principais:**
+- Migração de criptografia em bancos de dados RDS existentes
+- Criação e gerenciamento de snapshots RDS
+- Cópia de snapshots com criptografia habilitada
+- Restauração de instâncias a partir de snapshots criptografados
+- Configuração de KMS keys para RDS
+- Validação de criptografia e conectividade
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 35-50 minutos
+
+---
+
+### 21. 🕵️ [Detective Homes has a Way](./Detective%20Homes%20has%20a%20Way/)
+
+**Foco:** CloudWatch Data Protection, PII Detection, Data Masking, Compliance, Privacy
+
+**Conceitos principais:**
+- Configuração de políticas de proteção de dados no CloudWatch
+- Detecção automática de dados pessoais identificáveis (PII)
+- Implementação de mascaramento de informações sensíveis
+- Uso de Managed Data Identifiers da AWS
+- Configuração de operações de auditoria e mascaramento
+- Compliance com regulamentações de privacidade (GDPR, CCPA)
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 20-30 minutos
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -314,13 +365,16 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 6. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven (iniciante)
 7. **CodePipeline Not Working** - Troubleshooting de CI/CD (iniciante)
 8. **Developing Deployments** - CodeDeploy e deployment automation (iniciante)
-9. **Hey WordPress Let's Multisite** - WordPress e administração Linux (intermediário)
-10. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
-11. **Find the secret message** - Rede e segurança (intermediário)
-12. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
-13. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
-14. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
-15. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+9. **Deny external attacks from IPv6** - Segurança IPv6 e networking (iniciante)
+10. **No unencrypted databases allowed** - Criptografia de banco de dados (iniciante)
+11. **Detective Homes has a Way** - Proteção de dados e compliance (iniciante)
+12. **Hey WordPress Let's Multisite** - WordPress e administração Linux (intermediário)
+13. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
+14. **Find the secret message** - Rede e segurança (intermediário)
+15. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
+16. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
+17. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
+18. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
