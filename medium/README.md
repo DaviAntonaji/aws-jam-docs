@@ -42,6 +42,8 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 **Dificuldade:** ⭐⭐⭐☆☆  
 **Tempo estimado:** 45-60 minutos
 
+> **💡 Nota:** Este desafio é mais acessível e pode ser feito antes do EKS/Bedrock
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos

@@ -4,6 +4,8 @@
 
 Esta seção contém desafios de **nível fácil** do AWS Jam, focados em conceitos fundamentais de AWS e boas práticas de segurança. Cada desafio é independente e pode ser executado separadamente.
 
+> **📊 Nota sobre Dificuldades:** As avaliações foram reavaliadas considerando tempo de execução, complexidade conceitual e pré-requisitos técnicos. Alguns desafios marcados como ⭐⭐⭐⭐☆ são tecnicamente avançados mas estão no Easy devido à classificação original do AWS Jam.
+
 ## 🎯 Objetivos Gerais
 
 - ✅ Aprender conceitos fundamentais de AWS
@@ -11,6 +13,15 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 - ✅ Entender arquiteturas de rede e aplicação
 - ✅ Navegar validações automáticas de labs
 - ✅ Desenvolver habilidades práticas em produção
+
+## 📊 Critérios de Dificuldade
+
+| Estrelas | Nível | Tempo | Complexidade | Pré-requisitos |
+|----------|-------|-------|--------------|----------------|
+| ⭐☆☆☆☆ | Muito Simples | 15-30 min | Configuração básica | Conhecimento AWS básico |
+| ⭐⭐☆☆☆ | Simples | 30-60 min | Conceitos fundamentais | Familiaridade com serviços |
+| ⭐⭐⭐☆☆ | Intermediário | 60-90 min | Múltiplos serviços | Experiência prática |
+| ⭐⭐⭐⭐☆ | Avançado | 90+ min | Arquiteturas complexas | Conhecimento avançado |
 
 ## 📚 Desafios Disponíveis
 
@@ -105,6 +116,8 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐⭐⭐☆  
 **Tempo estimado:** 90-120 minutos
 
+> **⚠️ Nota:** Este desafio é avançado e poderia estar no Medium level
+
 ---
 
 ### 7. 🌟 [Data with the Stars!](./Data%20with%20Stars!/)
@@ -164,6 +177,8 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐⭐⭐☆  
 **Tempo estimado:** 90-120 minutos (Task 4 pode ser bloqueada por problemas de lab)
 
+> **⚠️ Nota:** Este desafio é avançado e poderia estar no Medium level
+
 ---
 
 ### 11. 🔍 [Look before you leap on the Cloud](./Look%20before%20you%20leap%20on%20t%20he%20Cloud/)
@@ -193,7 +208,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 - Geração de imagens com Amazon Nova Canvas
 - Invocação programática via Bedrock Runtime API com Python
 
-**Dificuldade:** ⭐⭐☆☆☆  
+**Dificuldade:** ⭐⭐⭐☆☆  
 **Tempo estimado:** 2-3 horas
 
 ---
@@ -215,7 +230,59 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 14. 🚀 [Developing Deployments](./Developing%20Deployments/)
+### 14. 🌐 [missing-front-end](./missing-front-end/)
+
+**Foco:** AWS Lambda, Function URL, API Gateway, Front-end Integration, HTTP Triggers
+
+**Conceitos principais:**
+- Criação de Function URL para invocação HTTP simples
+- Configuração de triggers web para funções Lambda
+- Integração front-end com backend serverless
+- Autenticação pública vs autenticada (AWS_IAM)
+- Configuração de CORS para acesso via navegador
+- Alternativa com API Gateway para casos mais complexos
+
+**Dificuldade:** ⭐☆☆☆☆  
+**Tempo estimado:** 15-30 minutos
+
+---
+
+### 15. 🚗 [Jam Challenge - Not finding my favourite car. Help me](./Jam%20Challenge%20-%20Not%20finding%20my%20favourite%20car.%20Help%20me/)
+
+**Foco:** Amazon DynamoDB, AWS Lambda, Query Limits, Environment Variables, Troubleshooting
+
+**Conceitos principais:**
+- Diagnóstico de problemas com DynamoDB Query Limits
+- Configuração de Environment Variables em AWS Lambda
+- Troubleshooting de aplicações serverless em produção
+- Entendimento de limitações do DynamoDB (máximo 1000 itens)
+- Impacto de configurações de query em resultados de busca
+- Resolução de problemas sem modificar código
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 20-30 minutos
+
+---
+
+### 16. 🌐 [Expand to IPv6 with ALB and NLB](./Expand%20to%20IPv6%20with%20ALB%20and%20NLB/)
+
+**Foco:** IPv6, Application Load Balancer (ALB), Network Load Balancer (NLB), Dualstack, Target Groups, Protocol Translation
+
+**Conceitos principais:**
+- Configuração de Load Balancers para dualstack (IPv4 + IPv6)
+- Tradução automática de protocolos IPv4↔IPv6
+- Configuração de Target Groups IPv4-only e IPv6-only
+- Diferenças entre ALB (Layer 7) e NLB (Layer 4)
+- Testes de conectividade IPv4 e IPv6 via Session Manager
+- Propagação de mudanças em Load Balancers
+- Health checks para targets IPv4 e IPv6
+
+**Dificuldade:** ⭐⭐⭐⭐☆  
+**Tempo estimado:** 60-90 minutos
+
+---
+
+### 17. 🚀 [Developing Deployments](./Developing%20Deployments/)
 
 **Foco:** AWS CodeDeploy, Deployment Automation, EC2, Lifecycle Hooks, DevOps
 
@@ -232,7 +299,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 15. 🔧 [CodePipeline Not Working](./CodePipeline%20Not%20Working/)
+### 18. 🔧 [CodePipeline Not Working](./CodePipeline%20Not%20Working/)
 
 **Foco:** AWS CodePipeline, Troubleshooting, CI/CD, CloudFormation, IAM
 
@@ -249,7 +316,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 16. 🔐 [Keep your variables safe](./Keep%20your%20variables%20safe/)
+### 19. 🔐 [Keep your variables safe](./Keep%20your%20variables%20safe/)
 
 **Foco:** AWS Lambda, AWS KMS, Criptografia, Segurança de Dados, Customer Managed Keys
 
@@ -266,7 +333,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 17. 🌐 [Hey WordPress Let's Multisite](./Hey%20Wordpress%20Let's%20Multisite/)
+### 20. 🌐 [Hey WordPress Let's Multisite](./Hey%20Wordpress%20Let's%20Multisite/)
 
 **Foco:** Amazon Lightsail, WordPress Multisite, Bitnami Stack, Linux Permissions, Apache Configuration
 
@@ -283,7 +350,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 18. 🚀 [Foundational Serverless - Connecting S3 events](./Foundational%20Serverless%20-%20Connecting%20S3%20events/)
+### 21. 🚀 [Foundational Serverless - Connecting S3 events](./Foundational%20Serverless%20-%20Connecting%20S3%20events/)
 
 **Foco:** Amazon S3, AWS Lambda, Amazon Rekognition, Event-Driven Architecture, Serverless
 
@@ -300,7 +367,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 19. 🛡️ [Deny external attacks from IPv6](./Deny%20external%20attacks%20from%20IPv6/)
+### 22. 🛡️ [Deny external attacks from IPv6](./Deny%20external%20attacks%20from%20IPv6/)
 
 **Foco:** IPv6 Security, Egress-Only Internet Gateway, VPC Networking, Route Tables, Cost Optimization
 
@@ -317,7 +384,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 20. 🔐 [No unencrypted databases allowed](./No%20unencrypted%20databases%20allowed/)
+### 23. 🔐 [No unencrypted databases allowed](./No%20unencrypted%20databases%20allowed/)
 
 **Foco:** RDS Encryption, Database Migration, KMS Integration, Data Security, Snapshot Management
 
@@ -334,7 +401,7 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 
 ---
 
-### 21. 🕵️ [Detective Homes has a Way](./Detective%20Homes%20has%20a%20Way/)
+### 24. 🕵️ [Detective Homes has a Way](./Detective%20Homes%20has%20a%20Way/)
 
 **Foco:** CloudWatch Data Protection, PII Detection, Data Masking, Compliance, Privacy
 
@@ -357,24 +424,33 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 - **Ambiente de lab** configurado (quando aplicável)
 
 ### Ordem Recomendada
-1. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock (mais simples)
-2. **Keep your variables safe** - Criptografia e segurança básica (iniciante)
-3. **Sharing is caring** - Conceitos de Lambda Layers (iniciante)
-4. **Want to play with Foundation Models** - IA Generativa e Bedrock (iniciante)
-5. **Automating E-commerce Product Categorization** - Rekognition e Lambda (iniciante)
-6. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven (iniciante)
-7. **CodePipeline Not Working** - Troubleshooting de CI/CD (iniciante)
-8. **Developing Deployments** - CodeDeploy e deployment automation (iniciante)
-9. **Deny external attacks from IPv6** - Segurança IPv6 e networking (iniciante)
-10. **No unencrypted databases allowed** - Criptografia de banco de dados (iniciante)
-11. **Detective Homes has a Way** - Proteção de dados e compliance (iniciante)
-12. **Hey WordPress Let's Multisite** - WordPress e administração Linux (intermediário)
-13. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas (intermediário)
-14. **Find the secret message** - Rede e segurança (intermediário)
-15. **The Cleanup Mission** - Governança e limpeza de recursos (intermediário)
-16. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries (avançado)
-17. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD (avançado)
-18. **Protect my CloudFront Origin** - Segurança avançada (mais complexo)
+
+#### 🟢 Iniciante (⭐⭐☆☆☆)
+1. **missing-front-end** - Function URL e triggers HTTP (mais simples)
+2. **Keep your variables safe** - Criptografia e segurança básica
+3. **Jam Challenge - Not finding my favourite car** - DynamoDB e troubleshooting
+4. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock
+5. **Sharing is caring** - Conceitos de Lambda Layers
+6. **Automating E-commerce Product Categorization** - Rekognition e Lambda
+7. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven
+8. **CodePipeline Not Working** - Troubleshooting de CI/CD
+9. **Developing Deployments** - CodeDeploy e deployment automation
+10. **Deny external attacks from IPv6** - Segurança IPv6 e networking
+11. **No unencrypted databases allowed** - Criptografia de banco de dados
+12. **Detective Homes has a Way** - Proteção de dados e compliance
+
+#### 🟡 Intermediário (⭐⭐⭐☆☆)
+13. **Want to play with Foundation Models** - IA Generativa e Bedrock (2-3h)
+14. **Hey WordPress Let's Multisite** - WordPress e administração Linux
+15. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas
+16. **Find the secret message** - Rede e segurança
+17. **The Cleanup Mission** - Governança e limpeza de recursos
+18. **Protect my CloudFront Origin** - Segurança em camadas
+
+#### 🔴 Avançado (⭐⭐⭐⭐☆)
+19. **Expand to IPv6 with ALB and NLB** - Load Balancers e conectividade IPv6
+20. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries
+21. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
