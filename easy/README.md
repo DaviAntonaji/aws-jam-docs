@@ -416,6 +416,61 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐☆☆☆  
 **Tempo estimado:** 20-30 minutos
 
+---
+
+### 25. 🌐 [Hello AWS Jam! - Create a static website using S3](./Hello%20AWS%20Jam!%20-%20Create%20a%20static%20website%20using%20S3/)
+
+**Foco:** Amazon S3, Static Website Hosting, Bucket Policies, Public Access, Web Development
+
+**Conceitos principais:**
+- Criação e configuração de buckets S3 para hospedagem de websites
+- Configuração de Static Website Hosting no S3
+- Gerenciamento de Block Public Access settings
+- Implementação de bucket policies para acesso público
+- Upload e organização de arquivos HTML
+- Configuração de documentos de índice e erro
+- Teste e validação de websites estáticos
+
+**Dificuldade:** ⭐☆☆☆☆  
+**Tempo estimado:** 15-30 minutos
+
+---
+
+### 26. 🛡️ [Access Denied: AWS IAM Access Analyzer keeps those pesky permission Gremlins out](./Access%20Denied%20AWS%20IAM%20Access%20Analyzer%20keeps%20those%20pesky%20permission%20Gremlins%20out/)
+
+**Foco:** AWS IAM Access Analyzer, S3 Bucket Policies, Security Analysis, Access Control, Compliance
+
+**Conceitos principais:**
+- Configuração e uso do AWS IAM Access Analyzer
+- Identificação de findings de acesso excessivamente permissivo
+- Análise de políticas de bucket S3 com problemas de segurança
+- Correção de políticas que violam a zona de confiança
+- Validação de correções através de rescan
+- Aplicação de princípios de least privilege
+- Troubleshooting de problemas de segurança em políticas
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+---
+
+### 27. ⚓ [Secure the Sailors](./Secure%20the%20Sailors/)
+
+**Foco:** Amazon Redshift Serverless, Row-Level Security (RLS), Column-Level Security (CLS), Database Security, Data Access Control
+
+**Conceitos principais:**
+- Configuração e uso do Amazon Redshift Serverless
+- Implementação de Row-Level Security (RLS) para controle de acesso por linha
+- Implementação de Column-Level Security (CLS) para controle de acesso por coluna
+- Criação e gerenciamento de usuários e roles em Redshift
+- Aplicação de princípios de least privilege em bancos de dados
+- Carregamento de dados via COPY do S3
+- Validação de políticas de segurança através de testes práticos
+- Comportamento de RLS quando usuários não têm políticas anexadas
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 60-90 minutos
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -426,31 +481,34 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 ### Ordem Recomendada
 
 #### 🟢 Iniciante (⭐⭐☆☆☆)
-1. **missing-front-end** - Function URL e triggers HTTP (mais simples)
-2. **Keep your variables safe** - Criptografia e segurança básica
-3. **Jam Challenge - Not finding my favourite car** - DynamoDB e troubleshooting
-4. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock
-5. **Sharing is caring** - Conceitos de Lambda Layers
-6. **Automating E-commerce Product Categorization** - Rekognition e Lambda
-7. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven
-8. **CodePipeline Not Working** - Troubleshooting de CI/CD
-9. **Developing Deployments** - CodeDeploy e deployment automation
-10. **Deny external attacks from IPv6** - Segurança IPv6 e networking
-11. **No unencrypted databases allowed** - Criptografia de banco de dados
-12. **Detective Homes has a Way** - Proteção de dados e compliance
+1. **Hello AWS Jam! - Create a static website using S3** - Hospedagem estática e S3 (mais simples)
+2. **missing-front-end** - Function URL e triggers HTTP
+3. **Keep your variables safe** - Criptografia e segurança básica
+4. **Access Denied: AWS IAM Access Analyzer** - Análise de segurança e políticas
+5. **Jam Challenge - Not finding my favourite car** - DynamoDB e troubleshooting
+6. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock
+7. **Sharing is caring** - Conceitos de Lambda Layers
+8. **Automating E-commerce Product Categorization** - Rekognition e Lambda
+9. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven
+10. **CodePipeline Not Working** - Troubleshooting de CI/CD
+11. **Developing Deployments** - CodeDeploy e deployment automation
+12. **Deny external attacks from IPv6** - Segurança IPv6 e networking
+13. **No unencrypted databases allowed** - Criptografia de banco de dados
+14. **Detective Homes has a Way** - Proteção de dados e compliance
 
 #### 🟡 Intermediário (⭐⭐⭐☆☆)
-13. **Want to play with Foundation Models** - IA Generativa e Bedrock (2-3h)
-14. **Hey WordPress Let's Multisite** - WordPress e administração Linux
-15. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas
-16. **Find the secret message** - Rede e segurança
-17. **The Cleanup Mission** - Governança e limpeza de recursos
-18. **Protect my CloudFront Origin** - Segurança em camadas
+15. **Secure the Sailors** - Redshift Serverless, RLS e CLS
+16. **Want to play with Foundation Models** - IA Generativa e Bedrock (2-3h)
+17. **Hey WordPress Let's Multisite** - WordPress e administração Linux
+18. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas
+19. **Find the secret message** - Rede e segurança
+20. **The Cleanup Mission** - Governança e limpeza de recursos
+21. **Protect my CloudFront Origin** - Segurança em camadas
 
 #### 🔴 Avançado (⭐⭐⭐⭐☆)
-19. **Expand to IPv6 with ALB and NLB** - Load Balancers e conectividade IPv6
-20. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries
-21. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD
+22. **Expand to IPv6 with ALB and NLB** - Load Balancers e conectividade IPv6
+23. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries
+24. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
