@@ -44,17 +44,36 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 
 > **💡 Nota:** Este desafio é mais acessível e pode ser feito antes do EKS/Bedrock
 
+---
+
+### 3. 🚀 [Cyber Trek: Voyage into Secure Infrastructure](./Cyber%20Trek%20Voyage%20into%20Secure%20Infrastructure/)
+
+**Foco:** Amazon CloudFront, Amazon S3, Security, CDN, Origin Access Control
+
+**Conceitos principais:**
+- Implementação de Origin Access Control (OAC) para restringir acesso S3
+- Configuração de redirecionamento HTTP para HTTPS
+- Otimização de cache com TTL customizado (1 hora)
+- Habilitação de S3 Versioning para proteção de dados
+- Aplicação de princípios de least privilege em bucket policies
+- Criptografia em trânsito com HTTPS obrigatório
+- Arquitetura CloudFront + S3 para sites estáticos seguros
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 60-90 minutos
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
-- **AWS Account** com permissões para Bedrock, EKS, Lambda, X-Ray
+- **AWS Account** com permissões para Bedrock, EKS, Lambda, X-Ray, CloudFront, S3
 - **Conhecimento intermediário** de serviços AWS
 - **Ambiente de lab** configurado (quando aplicável)
-- **Familiaridade** com conceitos de observabilidade
+- **Familiaridade** com conceitos de observabilidade e segurança
 
 ### Ordem Recomendada
-1. **Trace with AWS Lambda Powertools** - Observabilidade (conceitos fundamentais)
-2. **Automate EKS Access Controls** - IA + Automação (mais complexo)
+1. **Cyber Trek: Voyage into Secure Infrastructure** - CloudFront + S3 (conceitos fundamentais)
+2. **Trace with AWS Lambda Powertools** - Observabilidade (intermediário)
+3. **Automate EKS Access Controls** - IA + Automação (mais complexo)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
@@ -68,6 +87,13 @@ Desafio/
 ```
 
 ## 🔧 Conceitos Técnicos Avançados
+
+### 🚀 CloudFront + S3 Security
+- **Origin Access Control (OAC):** Restrição de acesso moderno
+- **Bucket Policies:** Controle granular de acesso
+- **HTTPS Enforcement:** Redirecionamento e criptografia
+- **Cache Optimization:** Balanceamento de TTLs
+- **S3 Versioning:** Proteção contra exclusões
 
 ### 🤖 Automação com IA (Bedrock)
 - **Bedrock Agents:** Agentes de IA para automação
@@ -89,6 +115,13 @@ Desafio/
 
 ## 🎓 Lições Aprendidas (Específicas para Medium)
 
+### 🚀 CloudFront + S3 Security
+- **OAC Configuration:** Use ARN completo da distribuição na bucket policy
+- **HTTPS Enforcement:** Configure redirecionamento automático
+- **Cache TTLs:** Balance performance e atualização de conteúdo
+- **Versioning:** Habilite para proteção contra exclusões
+- **Deploy Time:** Aguarde 5-15 minutos para mudanças propagarem
+
 ### 🤖 Automação com Bedrock
 - **Schema Validation:** Valide OpenAPI schemas antes do deploy
 - **Action Groups:** Configure corretamente os grupos de ações
@@ -104,7 +137,7 @@ Desafio/
 ### 🔧 Troubleshooting Avançado
 - **X-Ray Console:** Use o console X-Ray para debug
 - **CloudWatch Logs:** Monitore logs estruturados
-- **IAM Permissions:** Verifique permissões específicas (X-Ray, EKS, etc.)
+- **IAM Permissions:** Verifique permissões específicas (X-Ray, EKS, CloudFront, etc.)
 - **Region Consistency:** Mantenha consistência de região
 
 ## 📖 Recursos Adicionais
@@ -131,6 +164,12 @@ Desafio/
 
 ## 🆘 Troubleshooting Específico
 
+### Problemas Comuns - CloudFront + S3
+- **403 Access Denied via CloudFront:** Verificar OAC e bucket policy com ARN correto
+- **HTTP não redireciona:** Aguardar deploy e limpar cache do navegador
+- **Conteúdo não atualiza:** Verificar TTL e aguardar ou usar invalidation
+- **Versioning não funciona:** Confirmar que está "Enabled" em Properties
+
 ### Problemas Comuns - Bedrock + EKS
 - **"Agent not found":** Verificar região e alias ativa
 - **AccessDenied Lambda:** Verificar resource policy do Lambda
@@ -144,7 +183,7 @@ Desafio/
 - **Service name não aparece:** Verificar POWERTOOLS_SERVICE_NAME
 
 ### 🔍 Estratégias de Debug
-1. **Use consoles AWS:** X-Ray, CloudWatch, Bedrock
+1. **Use consoles AWS:** X-Ray, CloudWatch, Bedrock, CloudFront
 2. **Monitore logs:** CloudWatch Logs com estrutura adequada
 3. **Valide permissões:** IAM policies específicas para cada serviço
 4. **Teste incrementalmente:** Valide cada componente antes de prosseguir
@@ -152,31 +191,37 @@ Desafio/
 ## 🎯 Dicas para Competições
 
 ### Preparação Específica
+- ✅ **Conheça** CloudFront OAC e cache behaviors
 - ✅ **Conheça** Bedrock Agents e OpenAPI
 - ✅ **Pratique** com Lambda Powertools
 - ✅ **Entenda** conceitos de EKS Access Entries
 - ✅ **Familiarize-se** com X-Ray console e traces
 
 ### Durante a Competição
-- ⚡ **Configure** observabilidade primeiro (X-Ray)
+- ⚡ **Configure** segurança CloudFront + S3 primeiro
+- ⚡ **Configure** observabilidade (X-Ray)
 - ⚡ **Valide** schemas OpenAPI antes do deploy
 - ⚡ **Teste** agentes Bedrock com Test Agent
 - ⚡ **Monitore** traces e logs durante execução
 
 ### Tempo de Execução
+- **Cyber Trek (CloudFront + S3):** ~60-90 minutos
 - **Lambda Powertools:** ~45-60 minutos
 - **Bedrock + EKS:** ~60-90 minutos
-- **Total estimado:** ~2-2.5 horas
+- **Total estimado:** ~3-4 horas
 
 ## 🏭 Aplicação em Produção
 
 ### Melhorias Adicionais
 - **Monitoring:** Configure alertas proativos
 - **Security:** Implemente least privilege
-- **Cost Optimization:** Monitore custos de Bedrock e X-Ray
+- **Cost Optimization:** Monitore custos de CloudFront, Bedrock e X-Ray
 - **Documentation:** Mantenha documentação atualizada
+- **WAF:** Adicione proteção adicional ao CloudFront
 
 ### Considerações de Escala
+- **CloudFront:** Cache invalidations e custos de transferência
+- **S3:** Lifecycle policies para versões antigas
 - **Bedrock:** Limites de rate e quotas
 - **X-Ray:** Sampling rates para aplicações de alta escala
 - **Lambda:** Cold starts e performance

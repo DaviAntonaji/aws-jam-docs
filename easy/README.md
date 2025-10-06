@@ -471,6 +471,25 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 **Dificuldade:** ⭐⭐⭐☆☆  
 **Tempo estimado:** 60-90 minutos
 
+---
+
+### 28. 🔍 [Who messed up the data in my DB Cluster?](./Who%20messed%20up%20the%20data%20in%20my%20DB%20Cluster/)
+
+**Foco:** Amazon RDS MySQL, Audit Logs, MariaDB Audit Plugin, CloudWatch Logs, Forensics
+
+**Conceitos principais:**
+- Configuração de Audit Logs no RDS MySQL via Option Groups
+- Implementação do MariaDB Audit Plugin
+- Exportação de logs para CloudWatch Logs
+- Análise de logs com CloudWatch Logs Insights
+- Auditoria e forense de bancos de dados
+- Identificação de atividades DML suspeitas
+
+**Dificuldade:** ⭐⭐☆☆☆  
+**Tempo estimado:** 30-45 minutos
+
+> **⚠️ AVISO IMPORTANTE:** Este desafio possui **dados ausentes no ambiente** na Task 2. A query oficial das dicas executa corretamente, mas retorna apenas `rdsadmin` (usuário do sistema), que é rejeitado pelo validador. O evento de UPDATE malicioso na tabela `AUDIT.REVENUE` que deveria existir para investigação forense **nunca foi gerado** no ambiente do lab. **Task 1 funciona perfeitamente (40 pts), mas Task 2 não pode ser completada** porque o evento esperado não existe nos logs.
+
 ## 🚀 Como Começar
 
 ### Pré-requisitos
@@ -485,30 +504,31 @@ Esta seção contém desafios de **nível fácil** do AWS Jam, focados em concei
 2. **missing-front-end** - Function URL e triggers HTTP
 3. **Keep your variables safe** - Criptografia e segurança básica
 4. **Access Denied: AWS IAM Access Analyzer** - Análise de segurança e políticas
-5. **Jam Challenge - Not finding my favourite car** - DynamoDB e troubleshooting
-6. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock
-7. **Sharing is caring** - Conceitos de Lambda Layers
-8. **Automating E-commerce Product Categorization** - Rekognition e Lambda
-9. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven
-10. **CodePipeline Not Working** - Troubleshooting de CI/CD
-11. **Developing Deployments** - CodeDeploy e deployment automation
-12. **Deny external attacks from IPv6** - Segurança IPv6 e networking
-13. **No unencrypted databases allowed** - Criptografia de banco de dados
-14. **Detective Homes has a Way** - Proteção de dados e compliance
+5. **Who messed up the data in my DB Cluster?** - RDS Audit Logs (⚠️ Task 2 bloqueada)
+6. **Jam Challenge - Not finding my favourite car** - DynamoDB e troubleshooting
+7. **AI-Powered Log Analysis Challenge** - IA Generativa e Bedrock
+8. **Sharing is caring** - Conceitos de Lambda Layers
+9. **Automating E-commerce Product Categorization** - Rekognition e Lambda
+10. **Foundational Serverless - Connecting S3 events** - Serverless e event-driven
+11. **CodePipeline Not Working** - Troubleshooting de CI/CD
+12. **Developing Deployments** - CodeDeploy e deployment automation
+13. **Deny external attacks from IPv6** - Segurança IPv6 e networking
+14. **No unencrypted databases allowed** - Criptografia de banco de dados
+15. **Detective Homes has a Way** - Proteção de dados e compliance
 
 #### 🟡 Intermediário (⭐⭐⭐☆☆)
-15. **Secure the Sailors** - Redshift Serverless, RLS e CLS
-16. **Want to play with Foundation Models** - IA Generativa e Bedrock (2-3h)
-17. **Hey WordPress Let's Multisite** - WordPress e administração Linux
-18. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas
-19. **Find the secret message** - Rede e segurança
-20. **The Cleanup Mission** - Governança e limpeza de recursos
-21. **Protect my CloudFront Origin** - Segurança em camadas
+16. **Secure the Sailors** - Redshift Serverless, RLS e CLS
+17. **Want to play with Foundation Models** - IA Generativa e Bedrock (2-3h)
+18. **Hey WordPress Let's Multisite** - WordPress e administração Linux
+19. **Look before you leap on the Cloud** - Troubleshooting e configurações básicas
+20. **Find the secret message** - Rede e segurança
+21. **The Cleanup Mission** - Governança e limpeza de recursos
+22. **Protect my CloudFront Origin** - Segurança em camadas
 
 #### 🔴 Avançado (⭐⭐⭐⭐☆)
-22. **Expand to IPv6 with ALB and NLB** - Load Balancers e conectividade IPv6
-23. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries
-24. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD
+23. **Expand to IPv6 with ALB and NLB** - Load Balancers e conectividade IPv6
+24. **Unified Data Querying with Amazon Athena** - Análise de dados e Federated Queries
+25. **Foundational - Serverless Deployment Pipeline** - DevOps e CI/CD
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
