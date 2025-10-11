@@ -12,6 +12,7 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 - ✅ Entender arquiteturas serverless complexas
 - ✅ Aplicar melhores práticas de desenvolvimento
 - ✅ Desenvolver habilidades em produção e troubleshooting
+- ⚠️ Identificar e documentar problemas em labs (troubleshooting sistemático)
 
 ## 📚 Desafios Disponíveis
 
@@ -108,6 +109,47 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 - **Task 4 (30 pts):** Optimize - Remover recursos desnecessários
 
 > **⚠️ NOTA IMPORTANTE:** Task 3 é considerada a mais complexa do desafio devido ao roteamento bidirecional. Documentação inclui troubleshooting detalhado com resumo de depuração via ChatGPT.
+
+---
+
+### ❌ 6. [The Silent Network Crisis](./The%20Silent%20Network%20Crisis/) - **DESAFIO COM PROBLEMAS**
+
+> **🚨 AVISO CRÍTICO: ESTE DESAFIO ESTÁ QUEBRADO/INCOMPLETO**
+> 
+> **Problema:** Limitações de permissões IAM no laboratório impedem a modificação de Security Groups (`ec2:AuthorizeSecurityGroupIngress` e `ec2:AuthorizeSecurityGroupEgress`), impossibilitando a conclusão da Task 1 e bloqueando acesso à Task 2.
+>
+> **Status:** 🔴 Não pode ser completado
+>
+> **Uso recomendado:** Apenas para fins educacionais e compreensão de conceitos
+
+**Foco:** Bastion Hosts, AWS Systems Manager, VPC Networking, Troubleshooting, Security Groups
+
+**Conceitos principais (teóricos):**
+- Configuração e uso de Bastion Hosts (jump servers)
+- Troubleshooting de conectividade EC2 e Systems Manager
+- Gerenciamento de Security Groups e Network ACLs
+- VPC Endpoints para serviços AWS
+- Diagnóstico sistemático de rede
+- IAM Instance Profiles para SSM
+- RDP e acesso remoto seguro
+
+**Dificuldade:** ⭐⭐⭐☆☆ (se funcionasse)  
+**Tempo estimado:** N/A (bloqueado)
+
+**Tarefas:**
+- **Task 1 (45 pts):** ❌ Habilitar acesso RDP ao Bastion - **BLOQUEADA por IAM**
+- **Task 2 (? pts):** ❌ Inacessível - **Não pode ser alcançada**
+
+**Problema identificado:**
+```
+Erro: "You are not authorized to perform: ec2:AuthorizeSecurityGroupIngress"
+Causa: Permissões IAM faltantes no usuário do lab
+Impacto: Impossível modificar Security Groups conforme necessário
+```
+
+> **💡 Nota:** A documentação completa do troubleshooting realizado está disponível, incluindo análise técnica de rede (Route Tables, NACLs, Security Groups) e identificação da causa raiz. Use para aprendizado de troubleshooting sistemático.
+
+> **⚠️ NÃO USAR EM COMPETIÇÕES:** Este desafio não deve ser usado para pontuação até que o problema de permissões IAM seja corrigido pela equipe do AWS Jam.
 
 ---
 
@@ -248,6 +290,13 @@ Desafio/
 - [ ] **Aplicação prática:** Transferir conhecimento para cenários reais
 
 ## 🆘 Troubleshooting Específico
+
+### Problemas Comuns - The Silent Network Crisis ❌
+- **"Not authorized to perform: ec2:AuthorizeSecurityGroupIngress":** PROBLEMA DO LAB - permissões IAM faltantes
+- **Não consegue modificar Security Groups:** PROBLEMA DO LAB - não é culpa sua
+- **Task 1 não completa:** ESPERADO - desafio está quebrado
+- **Task 2 inacessível:** ESPERADO - bloqueada pela Task 1
+- **Solução:** Reporte ao suporte AWS Jam ou use documentação para aprender conceitos
 
 ### Problemas Comuns - Transit Gateway + Multi-VPC
 - **"Service did not connect via egress NAT":** Faltam rotas de retorno na Egress Public RT
