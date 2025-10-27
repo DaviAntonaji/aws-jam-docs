@@ -85,7 +85,62 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 
 ---
 
-### 5. 🌐 [Introverted and Extroverted Networks](./Introverted%20and%20Extroverted%20Networks/)
+### 5. 🛒 [WHERE ARE MY ORDERS](./WHERE%20ARE%20MY%20ORDERS/)
+
+**Foco:** Amazon EventBridge, AWS Lambda, DynamoDB, Event-Driven Architecture, Serverless Processing
+
+**Conceitos principais:**
+- Configuração de EventBridge custom event bus (OrderEventBus)
+- Criação de event rules para processamento de pedidos
+- Integração Lambda + EventBridge + DynamoDB
+- Event patterns para direcionamento de eventos
+- Environment variables para configuração de Lambdas
+- Arquitetura serverless para processamento de pedidos
+- Event-driven workflow para Food e Beverage orders
+
+**Dificuldade:** ⭐⭐⭐☆☆  
+**Tempo estimado:** 45-60 minutos
+
+**Tarefas:**
+- **Task 1 (60 pts):** Configure Event Rules - Criar regras no OrderEventBus
+- **Task 2 (45 pts):** Environment Variables - Configurar variáveis nas Lambdas
+- **Task 3 (? pts):** ⚠️ **EM DESENVOLVIMENTO** - Retornará em breve
+
+**Status:** ⚠️ **PARCIALMENTE COMPLETO** - Tasks 1 e 2 finalizadas, Task 3 em desenvolvimento
+
+> **💡 Nota:** Desafio prático focado em arquitetura event-driven. Tasks 1 e 2 estão completas com documentação detalhada.
+
+---
+
+### 6. 🛡️ [Put Security Manager on duty!](./Put%20Security%20Manager%20on%20duty!/)
+
+**Foco:** AWS DMS, AWS Secrets Manager, AWS Step Functions, SAP ASE, RDS SQL Server, SSL/TLS, KMS, Database Migration
+
+**Conceitos principais:**
+- Migração segura de SAP ASE para RDS SQL Server
+- Configuração de conexões SSL/TLS com certificados CA
+- Integração AWS Secrets Manager para credenciais seguras
+- Criação de endpoints DMS com criptografia end-to-end
+- Resolução de problemas de autorização IAM e KMS
+- Automação via Step Functions para criação de bancos
+- Troubleshooting de permissões KMS e key policies
+- Arquitetura de migração de dados com segurança máxima
+
+**Dificuldade:** ⭐⭐⭐⭐☆ Medium-Hard  
+**Tempo estimado:** 90-120 minutos
+
+**Tarefas:**
+- **Task 1 (60 pts):** Connect Securely - Criar endpoint DMS origem com SSL + CA
+- **Task 2 (30 pts):** Create Database - Criar banco RDS e endpoint destino (problemas KMS)
+- **Task 3 (? pts):** ⚠️ **EM DESENVOLVIMENTO** - Retornará em breve
+
+**Status:** ⚠️ **PARCIALMENTE COMPLETO** - Task 1 finalizada, Task 2 com problemas de KMS
+
+> **💡 Nota:** Desafio focado em migração segura de dados. Task 1 completa, Task 2 requer resolução de problemas de permissões KMS.
+
+---
+
+### 7. 🌐 [Introverted and Extroverted Networks](./Introverted%20and%20Extroverted%20Networks/)
 
 **Foco:** AWS Transit Gateway, VPC Networking, Egress VPC Pattern, Multi-VPC Architecture, Otimização de Custos
 
@@ -112,7 +167,7 @@ Esta seção contém desafios de **nível médio** do AWS Jam, focados em implem
 
 ---
 
-### ❌ 6. [The Silent Network Crisis](./The%20Silent%20Network%20Crisis/) - **DESAFIO COM PROBLEMAS**
+### ❌ 8. [The Silent Network Crisis](./The%20Silent%20Network%20Crisis/) - **DESAFIO COM PROBLEMAS**
 
 > **🚨 AVISO CRÍTICO: ESTE DESAFIO ESTÁ QUEBRADO/INCOMPLETO**
 > 
@@ -163,10 +218,12 @@ Impacto: Impossível modificar Security Groups conforme necessário
 
 ### Ordem Recomendada
 1. **Malware In your Bucket** - S3 + Lambda (troubleshooting prático - 30min)
-2. **Cyber Trek: Voyage into Secure Infrastructure** - CloudFront + S3 (segurança - 60min)
-3. **Trace with AWS Lambda Powertools** - Observabilidade (intermediário - 45min)
-4. **Introverted and Extroverted Networks** - Transit Gateway + VPC (networking avançado - 90min)
-5. **Automate EKS Access Controls** - IA + Automação (mais complexo - 90min)
+2. **WHERE ARE MY ORDERS** - EventBridge + Lambda (event-driven - 45min)
+3. **Cyber Trek: Voyage into Secure Infrastructure** - CloudFront + S3 (segurança - 60min)
+4. **Trace with AWS Lambda Powertools** - Observabilidade (intermediário - 45min)
+5. **Put Security Manager on duty!** - DMS + Secrets Manager (migração segura - 90min)
+6. **Introverted and Extroverted Networks** - Transit Gateway + VPC (networking avançado - 90min)
+7. **Automate EKS Access Controls** - IA + Automação (mais complexo - 90min)
 
 ### Estrutura Padrão
 Cada desafio segue a estrutura:
@@ -197,6 +254,25 @@ Desafio/
 - **Malware Detection:** Pipeline automatizado de segurança
 - **CloudWatch Logs:** Monitoramento e análise de resultados
 - **Event-Driven Architecture:** Arquitetura baseada em eventos
+
+### 🛒 EventBridge + Lambda Event Processing
+- **Custom Event Bus:** EventBridge personalizado para domínio específico
+- **Event Rules:** Regras para direcionamento baseado em padrões
+- **Event Patterns:** Filtros JSON para correspondência de eventos
+- **Lambda Targets:** Funções Lambda como destinos de eventos
+- **Environment Variables:** Configuração de integração DynamoDB
+- **Event-Driven Workflow:** Processamento automatizado de pedidos
+- **Order Processing:** Separação de tipos de pedidos (Food/Beverage)
+
+### 🛡️ DMS + Secrets Manager Database Migration
+- **Source Endpoints:** Conexões seguras com bancos de origem (SAP ASE)
+- **Target Endpoints:** Conexões com bancos de destino (RDS SQL Server)
+- **SSL/TLS Configuration:** Criptografia em trânsito com certificados CA
+- **Secrets Manager Integration:** Credenciais seguras para conexões
+- **KMS Encryption:** Criptografia de segredos com chaves gerenciadas
+- **Step Functions Automation:** Automação de criação de bancos
+- **IAM Role Management:** Permissões específicas para DMS e Lambda
+- **End-to-End Encryption:** Segurança completa durante migração
 
 ### 🚀 CloudFront + S3 Security
 - **Origin Access Control (OAC):** Restrição de acesso moderno
@@ -241,6 +317,27 @@ Desafio/
 - **Execution Role:** Lambda precisa de s3:GetObject + CloudWatch Logs
 - **First Execution:** Aguarde 30-60 segundos para Log Group aparecer
 - **Logs Insights:** Use queries para extrair informações específicas rapidamente
+
+### 🛒 EventBridge + Lambda Event Processing
+- **Custom Event Bus:** Use OrderEventBus específico, não o default
+- **Event Patterns:** Use JSON exato: `{ "detail": { "OrderType": ["Food"] } }`
+- **Creation Method:** Sempre selecione "Custom pattern", não "Use schema"
+- **Lambda Targets:** Associe corretamente FoodOrdersLambdaFunction e BeverageOrdersLambdaFunction
+- **Environment Variables:** Configure FoodOrdersTableName e BeverageOrdersTableName nas Lambdas corretas
+- **EventBusArn:** Use ARN completo do OrderEventBus na OrdersLambdaFunction
+- **Rule Names:** Use nomes descritivos como FoodOrdersRule e BeverageOrdersRule
+- **Testing:** Use Send events no EventBridge para testar o fluxo completo
+
+### 🛡️ DMS + Secrets Manager Database Migration
+- **SSL Configuration:** Use `verify-ca` para validação completa de certificados
+- **Certificate Import:** Importe certificados CA antes de criar endpoints
+- **Secrets Manager:** Use ARN completo dos segredos para credenciais
+- **IAM Roles:** Configure permissões específicas para DMS e Lambda execution
+- **KMS Permissions:** Verifique key policies para desencriptação de segredos
+- **Step Functions:** Resolva problemas de `lambda:InvokeFunction` primeiro
+- **Database Creation:** Use Step Functions para automação de criação de bancos
+- **Connection Testing:** Sempre teste conexões após criar endpoints
+- **Troubleshooting:** Monitore CloudWatch Logs para erros de permissão
 
 ### 🚀 CloudFront + S3 Security
 - **OAC Configuration:** Use ARN completo da distribuição na bucket policy
@@ -315,6 +412,25 @@ Desafio/
 - **Permission denied (Logs):** Execution role sem AWSLambdaBasicExecutionRole
 - **Upload não dispara:** Verificar se arquivo foi para o bucket correto
 
+### Problemas Comuns - EventBridge + Lambda
+- **Event rule não dispara:** Verificar se está no OrderEventBus correto
+- **"Pattern not matched":** Verificar JSON exato do event pattern
+- **Lambda não recebe evento:** Verificar se rule está Enabled e target correto
+- **Environment variable error:** Verificar nomes exatos das variáveis (case-sensitive)
+- **"EventBus not found":** Usar OrderEventBus, não o default bus
+- **Rule creation fails:** Usar "Custom pattern", não "Use schema"
+- **Testing events:** Usar Send events no EventBridge para debug
+
+### Problemas Comuns - DMS + Secrets Manager
+- **"Access to KMS is not allowed":** Verificar key policy da CMK para Lambda execution role
+- **"lambda:InvokeFunction not authorized":** Adicionar permissão à role do Step Functions
+- **"secretsmanager:GetSecretValue denied":** Verificar permissões na execution role da Lambda
+- **SSL connection fails:** Verificar se certificado CA foi importado corretamente
+- **"Certificate not found":** Confirmar se certificado está no DMS antes de criar endpoint
+- **Step Function fails:** Verificar permissões IAM e KMS para Lambda execution
+- **Database creation fails:** Verificar se segredo tem campos corretos (host/port/db/user/pass)
+- **Connection test fails:** Verificar Security Groups e NACLs entre replication instance e target
+
 ### Problemas Comuns - CloudFront + S3
 - **403 Access Denied via CloudFront:** Verificar OAC e bucket policy com ARN correto
 - **HTTP não redireciona:** Aguardar deploy e limpar cache do navegador
@@ -344,12 +460,16 @@ Desafio/
 ### Preparação Específica
 - ✅ **Conheça** Transit Gateway e Egress VPC pattern
 - ✅ **Conheça** S3 Event Notifications e Lambda triggers
+- ✅ **Conheça** EventBridge custom event bus e event rules
+- ✅ **Conheça** DMS source/target endpoints e SSL configuration
 - ✅ **Conheça** CloudFront OAC e cache behaviors
 - ✅ **Conheça** Bedrock Agents e OpenAPI
 - ✅ **Pratique** com Lambda Powertools e roteamento VPC
 - ✅ **Entenda** conceitos de EKS Access Entries
 - ✅ **Familiarize-se** com X-Ray console e traces
 - ✅ **Domine** route tables e roteamento bidirecional
+- ✅ **Configure** environment variables em Lambda functions
+- ✅ **Resolva** problemas de KMS e key policies
 
 ### Durante a Competição
 - ⚡ **Resolva** integrações S3 + Lambda primeiro (rápido)
@@ -363,11 +483,13 @@ Desafio/
 
 ### Tempo de Execução
 - **Malware In your Bucket (S3 + Lambda):** ~30-45 minutos
+- **WHERE ARE MY ORDERS (EventBridge + Lambda):** ~45-60 minutos
 - **Cyber Trek (CloudFront + S3):** ~60-90 minutos
 - **Lambda Powertools:** ~45-60 minutos
+- **Put Security Manager on duty! (DMS + Secrets Manager):** ~90-120 minutos
 - **Introverted and Extroverted Networks (Transit Gateway):** ~90-120 minutos
 - **Bedrock + EKS:** ~60-90 minutos
-- **Total estimado:** ~4.5-6 horas
+- **Total estimado:** ~6-7 horas
 
 ## 🏭 Aplicação em Produção
 
